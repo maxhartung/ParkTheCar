@@ -7,9 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E732432C266875FA00C31DDA /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = E732432B266875FA00C31DDA /* Car.swift */; };
 		E773EA4C2668414F00D057F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E773EA4B2668414F00D057F3 /* AppDelegate.swift */; };
-		E773EA4E2668414F00D057F3 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = E773EA4D2668414F00D057F3 /* GameScene.sks */; };
-		E773EA502668414F00D057F3 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = E773EA4F2668414F00D057F3 /* Actions.sks */; };
 		E773EA522668414F00D057F3 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E773EA512668414F00D057F3 /* GameScene.swift */; };
 		E773EA542668414F00D057F3 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E773EA532668414F00D057F3 /* GameViewController.swift */; };
 		E773EA572668414F00D057F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E773EA552668414F00D057F3 /* Main.storyboard */; };
@@ -17,10 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		E773EA482668414F00D057F3 /* park.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = park.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E732432B266875FA00C31DDA /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
+		E773EA482668414F00D057F3 /* ParkTheCar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParkTheCar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E773EA4B2668414F00D057F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E773EA4D2668414F00D057F3 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
-		E773EA4F2668414F00D057F3 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
 		E773EA512668414F00D057F3 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		E773EA532668414F00D057F3 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		E773EA562668414F00D057F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -39,10 +37,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E732432A266875EE00C31DDA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E732432B266875FA00C31DDA /* Car.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		E773EA3F2668414F00D057F3 = {
 			isa = PBXGroup;
 			children = (
-				E773EA4A2668414F00D057F3 /* park */,
+				E773EA4A2668414F00D057F3 /* Park */,
 				E773EA492668414F00D057F3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,32 +56,31 @@
 		E773EA492668414F00D057F3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E773EA482668414F00D057F3 /* park.app */,
+				E773EA482668414F00D057F3 /* ParkTheCar.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E773EA4A2668414F00D057F3 /* park */ = {
+		E773EA4A2668414F00D057F3 /* Park */ = {
 			isa = PBXGroup;
 			children = (
+				E732432A266875EE00C31DDA /* Models */,
 				E773EA4B2668414F00D057F3 /* AppDelegate.swift */,
-				E773EA4D2668414F00D057F3 /* GameScene.sks */,
-				E773EA4F2668414F00D057F3 /* Actions.sks */,
 				E773EA512668414F00D057F3 /* GameScene.swift */,
 				E773EA532668414F00D057F3 /* GameViewController.swift */,
 				E773EA552668414F00D057F3 /* Main.storyboard */,
 				E773EA582668415000D057F3 /* Assets.xcassets */,
 				E773EA5A2668415000D057F3 /* Info.plist */,
 			);
-			path = park;
+			path = Park;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E773EA472668414F00D057F3 /* park */ = {
+		E773EA472668414F00D057F3 /* ParkTheCar */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E773EA5D2668415000D057F3 /* Build configuration list for PBXNativeTarget "park" */;
+			buildConfigurationList = E773EA5D2668415000D057F3 /* Build configuration list for PBXNativeTarget "ParkTheCar" */;
 			buildPhases = (
 				E773EA442668414F00D057F3 /* Sources */,
 				E773EA452668414F00D057F3 /* Frameworks */,
@@ -85,9 +90,9 @@
 			);
 			dependencies = (
 			);
-			name = park;
+			name = ParkTheCar;
 			productName = park;
-			productReference = E773EA482668414F00D057F3 /* park.app */;
+			productReference = E773EA482668414F00D057F3 /* ParkTheCar.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -104,7 +109,7 @@
 					};
 				};
 			};
-			buildConfigurationList = E773EA432668414F00D057F3 /* Build configuration list for PBXProject "park" */;
+			buildConfigurationList = E773EA432668414F00D057F3 /* Build configuration list for PBXProject "ParkTheCar" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -117,7 +122,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E773EA472668414F00D057F3 /* park */,
+				E773EA472668414F00D057F3 /* ParkTheCar */,
 			);
 		};
 /* End PBXProject section */
@@ -128,9 +133,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E773EA572668414F00D057F3 /* Main.storyboard in Resources */,
-				E773EA4E2668414F00D057F3 /* GameScene.sks in Resources */,
 				E773EA592668415000D057F3 /* Assets.xcassets in Resources */,
-				E773EA502668414F00D057F3 /* Actions.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +146,7 @@
 			files = (
 				E773EA522668414F00D057F3 /* GameScene.swift in Sources */,
 				E773EA542668414F00D057F3 /* GameViewController.swift in Sources */,
+				E732432C266875FA00C31DDA /* Car.swift in Sources */,
 				E773EA4C2668414F00D057F3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,7 +293,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = github.park;
+				PRODUCT_BUNDLE_IDENTIFIER = github.ParkTheCar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -308,7 +312,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = github.park;
+				PRODUCT_BUNDLE_IDENTIFIER = github.ParkTheCar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -318,7 +322,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E773EA432668414F00D057F3 /* Build configuration list for PBXProject "park" */ = {
+		E773EA432668414F00D057F3 /* Build configuration list for PBXProject "ParkTheCar" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E773EA5B2668415000D057F3 /* Debug */,
@@ -327,7 +331,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E773EA5D2668415000D057F3 /* Build configuration list for PBXNativeTarget "park" */ = {
+		E773EA5D2668415000D057F3 /* Build configuration list for PBXNativeTarget "ParkTheCar" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E773EA5E2668415000D057F3 /* Debug */,
