@@ -53,7 +53,7 @@ class GameScene: SKScene {
             
             for (index1,parkingSpot) in parkingSpots.enumerated() {
                 for (index,car) in cars.enumerated() {
-                    if parkingSpot.frame.contains(car.skSpriteNode.position) {
+                    if parkingSpot.frame.contains(car.skSpriteNode.frame) {
                         cars[index].parkedOn = index1
                         scoreLabel.text = "You parked \(cars.filter({ $0.parkedOn != 100}).count ) cars"
                     } else if car.parkedOn == index1{
